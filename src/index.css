@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+.board-area-fullscreen {
+  height: calc(100vh - 150px);
+  max-height: none;
+}
+
+.board-area-fullscreen + .bottom-hud {
+  display: none;
+}

@@ -1,0 +1,6 @@
+{
+  "name": "World of Warcraft: The Board Game - Character Sheet",
+  "description": "Hoja de personaje interactiva y persistente con soporte para equipamiento de cartas reales y resolución de combate para World of Warcraft: El Juego de Tablero.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

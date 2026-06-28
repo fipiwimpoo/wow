@@ -1,0 +1,22 @@
+- id: "FIREBALL"
+  name: "Fireball"
+  type: "POWER"
+  expansion: "CORE"
+  metadata:
+    class: "MAGE"
+    powerType: "SPELL"
+    requiredLevel: 1
+    resourceType: "ENERGY"
+    resourceCost: 2
+    range: "RANGED"
+    targetType: "ENEMY"
+    school: "FIRE"
+    cooldown: 0
+  mechanics:
+    - trigger: "START_RESOLUTION_STEP"
+      activation: "MANDATORY"
+      conditions: []
+      costs: []
+      effects:
+        - type: "ADD_DAMAGE"
+          value: 4

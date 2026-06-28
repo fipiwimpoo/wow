@@ -1,0 +1,146 @@
+cards:
+  - id: item_shadow_wand
+    name: Shadow Wand
+    type: ITEM
+    expansion: core
+    tags: [weapon, wand, magic]
+    text: "Add 1 BLUE die to your dice pool. ATTRITION +1."
+    metadata:
+      deckId: triangle
+      itemType: WEAPON
+      equipmentSlot: WAND
+      weaponType: WAND
+      requiredLevel: 1
+      goldValue: 4
+    mechanics:
+      - trigger: PASSIVE_WHILE_EQUIPPED
+        activation: MANDATORY
+        conditions: []
+        costs: []
+        effects:
+          - type: ADD_DICE
+            color: BLUE
+            amount: 1
+            target: SELF_DICE_POOL
+            duration: WHILE_EQUIPPED
+          - type: ADD_ATTRITION
+            amount: 1
+            target: SELF
+            duration: WHILE_EQUIPPED
+
+  - id: item_skycaller
+    name: Skycaller
+    type: ITEM
+    expansion: core
+    tags: [weapon, wand, magic]
+    text: "Add 2 BLUE dice to your dice pool. ATTRITION +1."
+    metadata:
+      deckId: triangle
+      itemType: WEAGONS // Wait, let's keep the user's exactly or should we fix "WEAPON"? Wait! Let's check the user request text.
+      itemType: WEAPON
+      equipmentSlot: WAND
+      weaponType: WAND
+      requiredLevel: 2
+      goldValue: 8
+    mechanics:
+      - trigger: PASSIVE_WHILE_EQUIPPED
+        activation: MANDATORY
+        conditions: []
+        costs: []
+        effects:
+          - type: ADD_DICE
+            color: BLUE
+            amount: 2
+            target: SELF_DICE_POOL
+            duration: WHILE_EQUIPPED
+          - type: ADD_ATTRITION
+            amount: 1
+            target: SELF
+            duration: WHILE_EQUIPPED
+
+  - id: item_scimitar
+    name: Scimitar
+    type: ITEM
+    expansion: core
+    tags: [weapon, sword, melee]
+    text: "Add 2 RED dice to your dice pool. REROLL +1."
+    metadata:
+      deckId: triangle
+      itemType: WEAPON
+      equipmentSlot: SWORD
+      weaponType: SWORD
+      requiredLevel: 2
+      goldValue: 7
+    mechanics:
+      - trigger: PASSIVE_WHILE_EQUIPPED
+        activation: MANDATORY
+        conditions: []
+        costs: []
+        effects:
+          - type: ADD_DICE
+            color: RED
+            amount: 2
+            target: SELF_DICE_POOL
+            duration: WHILE_EQUIPPED
+          - type: ADD_REROLL_BONUS
+            amount: 1
+            target: SELF
+            duration: WHILE_EQUIPPED
+
+  - id: item_neophytes_robe
+    name: Neophyte's Robe
+    type: ITEM
+    expansion: core
+    tags: [armor, cloth]
+    text: "Add 1 GREEN die to your dice pool. REROLL +1."
+    metadata:
+      deckId: triangle
+      itemType: ARMOR
+      equipmentSlot: CLOTH
+      armorType: CLOTH
+      requiredLevel: 1
+      goldValue: 2
+    mechanics:
+      - trigger: PASSIVE_WHILE_EQUIPPED
+        activation: MANDATORY
+        conditions: []
+        costs: []
+        effects:
+          - type: ADD_DICE
+            color: GREEN
+            amount: 1
+            target: SELF_DICE_POOL
+            duration: WHILE_EQUIPPED
+          - type: ADD_REROLL_BONUS
+            amount: 1
+            target: SELF
+            duration: WHILE_EQUIPPED
+
+  - id: item_iridescent_hammer
+    name: Iridescent Hammer
+    type: ITEM
+    expansion: core
+    tags: [weapon, mace, melee]
+    text: "Add 1 RED die to your dice pool. ATTRITION +1."
+    metadata:
+      deckId: triangle
+      itemType: WEAPON
+      equipmentSlot: MACE
+      weaponType: MACE
+      requiredLevel: 2
+      goldValue: 8
+    mechanics:
+      - trigger: PASSIVE_WHILE_EQUIPPED
+        activation: MANDATORY
+        conditions: []
+        costs: []
+        effects:
+          - type: ADD_DICE
+            color: RED
+            amount: 1
+            target: SELF_DICE_POOL
+            duration: WHILE_EQUIPPED
+          - type: ADD_ATTRITION
+            amount: 1
+            target: SELF
+            duration: WHILE_EQUIPPED

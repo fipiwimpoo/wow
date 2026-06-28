@@ -1,0 +1,19 @@
+- id: "SWORD_OF_LIGHT"
+  name: "Sword of Light"
+  type: "ITEM"
+  deckId: "triangle"
+  expansion: "CORE"
+  metadata:
+    itemType: "WEAPON"
+    slot: "MAIN_HAND"
+    weaponType: "SWORD"
+    requiredLevel: 2
+    goldValue: 150
+  mechanics:
+    - trigger: "ON_ACQUIRE"
+      activation: "MANDATORY"
+      conditions: []
+      costs: []
+      effects:
+        - type: "GAIN_GOLD"
+          value: 50

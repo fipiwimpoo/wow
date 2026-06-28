@@ -1,0 +1,19 @@
+- id: "CLEAVE"
+  name: "Cleave"
+  type: "ENEMY_ABILITY"
+  expansion: "CORE"
+  metadata:
+    enemyType: "ORC_WARRIOR"
+    threat: 3
+    targetPriority: "RANDOM"
+    abilityType: "ATTACK"
+    cooldown: 1
+    triggerWeight: 5
+  mechanics:
+    - trigger: "BEFORE_ATTACK"
+      activation: "MANDATORY"
+      conditions: []
+      costs: []
+      effects:
+        - type: "ADD_DAMAGE"
+          value: 2

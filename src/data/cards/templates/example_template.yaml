@@ -1,0 +1,6 @@
+# Base templates for future YAML expansions
+- templateId: "BASE_WEAPON"
+  type: "ITEM"
+  metadata:
+    itemType: "WEAPON"
+    slot: "MAIN_HAND"

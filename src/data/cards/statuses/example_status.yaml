@@ -1,0 +1,17 @@
+- id: "POISON_STATUS"
+  name: "Poisoned"
+  type: "STATUS"
+  expansion: "CORE"
+  metadata:
+    isDebuff: true
+    stackable: true
+    maxStacks: 5
+    duration: 3
+  mechanics:
+    - trigger: "END_COMBAT_ROUND"
+      activation: "MANDATORY"
+      conditions: []
+      costs: []
+      effects:
+        - type: "LOSE_HEALTH"
+          value: 1
